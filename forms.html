@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="nothing.php" method="GET">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <hr>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pws">
+        </fieldset>
+    </form>
+    <form action="send.php" method="POST">
+        <fieldset>
+            <legend>Favourite Color</legend>
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="green">Green</label>
+            <input type="radio" name="color" id="green" value="green">
+            <label for="yellow">Yellow</label>
+            <input type="radio" name="color" id="yellow" value="yellow">
+        </fieldset>
+        <fieldset>
+            <legend>Contact methods</legend>
+            <label for="email">E-mail</label>
+            <input type="checkbox" name="email" id="email" value="email">
+            <label for="mail">Mail</label>
+            <input type="checkbox" name="mail" id="mail" value="mail">
+            <label for="phone">Phone</label>
+            <input type="checkbox" name="phone" id="phone" value="phone">
+        </fieldset>
+        <label id="comment">Comments</label>    
+        <textarea id="comment" name="comment" cols="50" rows="5" placeholder="My comment"></textarea>
+        <br>
+        <label id="cities">Cities:</label>
+        <select name="cities" id="cities">
+            <option value="paris">Paris</option>
+            <option value="ferror">Ferrol</option>
+            <option value="otawa">Otawa</option>
+            <option value="boiro">Boiro</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit"/>
+
+    </form>
+</body>
+</html>
