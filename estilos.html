@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><!--Creamos una hoja de estilo (3º opción)-->
+   <style> 
+        label{
+            background-color:coral;
+            color:rgb(150, 17, 7);
+        }
+        h2{
+            background-color: #4FA654;
+            color:#A65073;
+            padding:1.35em;
+            border-radius: 10px;
+            border-width: 5px;
+            border-style: dashed;
+            border-color: #514248;
+        }
+        img{
+            border-radius: 40px;
+            padding:10px;
+        }
+        p{
+            border-top:6px;
+            border-bottom:6px ;
+            border-left:6px ;
+            border-right:6px ;
+            border-color:#A65073 ;
+            border-style: groove;
+            padding: 5px;
+        }
+
+    </style><!--Añadimos los estilos dentro de la etiqueta head, usando la etiqueta <style> (2º opción) -->
+    <title>Estilos</title>
+</head>
+<body>
+    <h1 style="background-color: blue; color: aqua; padding:1.5em;">Forms</h1><!--Utilizamos el atributo style="" para añadir estilos (1º opción) -->
+    <form action="nothing.php" method="GET">
+        <fieldset>
+            <legend style="background-color: brown; color: antiquewhite; padding:1em;">Login</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <hr>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pws">
+        </fieldset>
+    </form>
+    <img src="https://picsum.photos/id/1067/600/400" alt="">
+    <a href="https://mestre.iessanclemente.net/">IES San Clemente</a>
+    <p id="pruebaFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ut neque rerum odio veniam quam recusandae corrupti dolorum debitis? Odio asperiores amet et mollitia omnis, rerum earum tempora odit non quo dolore recusandae incidunt. Sapiente veniam consequuntur mollitia id illum ipsam sint et laudantium nemo incidunt temporibus soluta dolorem distinctio quos dolore debitis illo, dolorum aperiam perspiciatis deleniti porro nobis itaque suscipit aliquid. Soluta earum et quod dignissimos ducimus porro ipsa ipsam alias, ipsum dolorum? Consectetur aliquid sequi minima voluptatum optio quibusdam ipsa nostrum, nam enim hic accusamus, labore a vitae. Similique quisquam eligendi maxime culpa velit expedita neque cupiditate nostrum, voluptate amet ipsam repellendus aliquid incidunt dolores blanditiis dolorum odit earum. Repudiandae, corporis numquam nostrum voluptatem eum deserunt ab.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolore iste vero distinctio, eum amet! 
+        Laudantium laborum molestiae ab reiciendis ipsam, quo cupiditate quisquam dicta culpa omnis quis nisi 
+        recusandae consequatur quam, voluptate illo harum nulla laboriosam qui sapiente. Autem sapiente aperiam 
+        exercitationem nobis nesciunt, porro aspernatur reiciendis deserunt fugiat quae laboriosam vero eveniet 
+        impedit odit quo dolore atque dignissimos eaque a officia qui rerum. Iusto ipsum ducimus quaerat dolores 
+        consequatur corrupti nam architecto saepe repellendus, facilis enim esse facere eaque quasi. Esse quidem 
+        voluptate sunt. Magni doloremque numquam perferendis dolore architecto officia voluptatem corrupti quas. 
+        Dignissimos nihil totam non facilis modi quos fugiat temporibus voluptate! Delectus voluptatum esse odio, 
+        omnis vero eaque expedita iure nostrum magni a itaque consequatur.</p>
+        <table border="1">
+            <!--Para poner títulos utilizamos caption-->
+            <caption>DAM1</caption>
+            <thead>
+                <tr>
+                    <th colspan="6">Time Table</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6" id="hours">Hours</th>
+                    <th class="day">Mon</th>
+                    <th class="day">Tue</th>
+                    <th class="day">Wed</th>
+                    <th class="day">Thu</th>
+                    <th class="day">Fri</th>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                  <td colspan="6" id="lunch">Lunch</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td rowspan ="2" colspan="2" id="project">Project</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>About you</h1>
+    <form action="send.php" method="POST">
+        <fieldset>
+            <legend>Favourite Color</legend>
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="green">Green</label>
+            <input type="radio" name="color" id="green" value="green">
+            <label for="yellow">Yellow</label>
+            <input type="radio" name="color" id="yellow" value="yellow">
+        </fieldset>
+        <fieldset>
+            <legend>Contact methods</legend>
+            <label for="email">E-mail</label>
+            <input type="checkbox" name="email" id="email" value="email">
+            <label for="mail">Mail</label>
+            <input type="checkbox" name="mail" id="mail" value="mail">
+            <label for="phone">Phone</label>
+            <input type="checkbox" name="phone" id="phone" value="phone">
+        </fieldset>
+        <label id="comment">Comments</label>    
+        <textarea id="comment" name="comment" cols="50" rows="5" placeholder="My comment"></textarea>
+        <br>
+        <label id="cities">Cities:</label>
+        <select name="cities" id="cities">
+            <option value="paris">Paris</option>
+            <option value="ferror">Ferrol</option>
+            <option value="otawa">Otawa</option>
+            <option value="boiro">Boiro</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit"/>
+
+    </form>
+</body>
+</html>

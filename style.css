@@ -1,0 +1,57 @@
+table{
+    border-width: 10px;
+    border-style: double;
+    border-color: #24A89C;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #A84F23;
+    color: wheat;
+}
+p{
+    margin: 3px;
+    border-color: #306964;
+    border-width: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#hours{
+    background-color: #306964;
+    color: wheat;
+}
+.day{
+    background-color:#24A89C ;
+}
+#lunch{
+    background-color: #A84F23;
+    text-align: center;
+    color: white;
+}
+#project{
+    background-color: #306964;
+    color: wheat;
+}
+td{
+    padding: 15px;
+    background-color: #243332;
+    color: wheat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    font-weight:500;
+}
+#pruebaFont{
+
+    font-family: 'Playfair Display', serif;
+}
+
+a:link{
+    color:red;
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:brown;
+}
